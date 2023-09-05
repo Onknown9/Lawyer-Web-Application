@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+}
+.Header{
+margin-top: 30px;
+color: #a6191f;;
+font-family: Courier;
+font-weight: 400;
+font-size: 20px;
+width:100%;
+text-align:center;
+}
+.Header-info{
+padding:35px;
+margin: auto;
+width: 40%;
+height: 200px;
+border: 1px solid #000;
+}
+.header-location-photo{
+margin-top:5px;
+float:left;
+}
+.header-contacts-photo{
+margin-top:5px;
+float:left;
+}
+.Header-location{
+width:35%;
+border: 1px solid #000;
+float: left;
+}
+.Header-contacts{
+width:30%;
+border: 1px solid #000;
+float: right;
+
+}
