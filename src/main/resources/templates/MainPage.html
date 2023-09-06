@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1">
     <title>Main Page</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/main-css.css}">
+    <link rel="stylesheet" type="text/css" href="/static/main-css.css">
 </head>
 <body>
     <div class="Header">
@@ -12,29 +12,26 @@
         <div class="Header-info">
 
             <div class="Header-location">
-                <img th:src="@{/images/location.png}" alt="location" style="width:25px;height=25px;" class="header-location-photo">
+                <img src="/static/images/location.png" alt="location" style="width:25px;height=25px;" class="header-location-photo">
                 <h5>city: Odessa, street: RandomStreet64, 3-A</h5>
             </div>
 
             <div class="Header-contacts">
-                <img th:src="@{/images/phone.png}" alt="phone" style="width:25px;height=25px;" class="header-contacts-photo">
+                <img src="/static/images/phone.png" alt="phone" style="width:25px;height=25px;" class="header-contacts-photo">
                 <h5 class="header-phone">+380987654321</h5>
             </div>
 
             <div class="Header-button-container">
-                <div class="button1">
-                    <button type="button">Click Me!</button>
+                <div>
+                    <button class="button" type="submit">About Lawyer</button>
                 </div>
 
-                <div class="button2">
-                    <button type="button">Click Me!</button>
-                </div>
-
-                <div class="button3">
-                    <button type="button">Click Me!</button>
+                <div>
+                    <button class="button2" type="submit">Services</button>
                 </div>
             </div>
         </div>
+        <img src="/static/images/court-redacted.png" alt="court" class="court-photo-1">
     </div>
 </body>
 </html>
