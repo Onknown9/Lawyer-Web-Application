@@ -2,38 +2,56 @@
     margin:0;
     padding:0;
 }
-.Header{
+.MainContainer{
+display:flex;
+flex-direction:column;
+width:100%;
+border: 2px solid #a6191f;
+gap: 50px;
+}
+.intro{
+padding-bottom:70px;
+}
+.HeaderContainer{
+text-align:center;
+width:35%;
+margin:0 auto;
+padding:10px;
+position:relative;
+height:auto;
 margin-top: 30px;
 font-family: Courier;
 font-weight: 400;
 font-size: 20px;
-width:100%;
-text-align:center;
 }
-.Header-info{
-color: #a6191f;
-padding:35px;
-margin: auto;
-width: 40%;
-height: 200px;
-}
-.header-location-photo{
-margin-top:5px;
-float:left;
-}
-.header-contacts-photo{
-margin-top:5px;
-float:left;
+.HeaderInformation{
+color:#a6191f;
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+gap: 90px;
 }
 .Header-location{
-margin-top:5%;
-width:35%;
-float: left;
+flex:1;
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+gap: 10px;
 }
 .Header-contacts{
-margin-top:6%;
-width:30%;
-float: right;
+flex:1;
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+gap: 10px;
+}
+.header-location-photo{
+width:30px;
+height:30px;
+}
+.header-contacts-photo{
+width:30px;
+height:30px;
 }
 .Header-button-container{
 margin-top:25%;
@@ -53,7 +71,7 @@ font-size: 16px;
 background-color: transparent;
 }
 .button2{
-padding: 14px 59px;
+padding: 23px 44px;
 border: 2px solid #a6191f;
 border-radius: 10px;
 text-align: center;
@@ -67,11 +85,4 @@ color: dodgerblue;
 .button:hover{
 border-color: #2196F3;
 color: dodgerblue;
-}
-.header-phone{
-margin-top:5px;
-}
-.court-photo-1{
-margin-top:50px;
-width:100%;
 }
