@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    background-color: #DCDCDC;
 }
 .MainContainer{
 display:flex;
@@ -85,4 +86,42 @@ color: dodgerblue;
 .button:hover{
 border-color: #2196F3;
 color: dodgerblue;
+}
+.court-photo-1{
+width:100%;
+}
+.LawyerInformation{
+text-align:center;
+border: 2px solid #a6191f;
+height:400px;
+width:50%;
+display:flex;
+justify-content:space-evenly;
+flex-direction:row;
+margin:auto;
+}
+.lawyer-photo{
+padding:20px;
+margin:auto;
+height:300px;
+width:250px;
+}
+.Lawyer-Information{
+margin:auto;
+display:flex;
+justify-content:space-evenly;
+flex-direction:column;
+gap:20px;
+}
+.lawyer-label{
+font-family: Courier;
+font-weight: 400;
+font-size: 25px;
+color:#a6191f;
+}
+.lawyer-desc{
+padding:20px;
+font-family: Courier;
+font-weight: 400;
+font-size: 18px;
 }
