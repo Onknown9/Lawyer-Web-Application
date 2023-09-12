@@ -8,7 +8,7 @@ display:flex;
 flex-direction:column;
 width:100%;
 border: 2px solid #a6191f;
-gap: 50px;
+gap: 70px;
 }
 .intro{
 padding-bottom:70px;
@@ -90,7 +90,7 @@ color: dodgerblue;
 .court-photo-1{
 width:100%;
 opacity: 0.6;
-border: 2px solid #a6191f;
+border: 1px solid #a6191f;
 }
 .LawyerInformation{
 text-align:center;
@@ -131,7 +131,7 @@ font-size: 18px;
 text-align:center;
 display:flex;
 flex-direction:column;
-gap:20px;
+gap:100px;
 }
 .services-intro{
 color: #a6191f;
