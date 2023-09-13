@@ -94,7 +94,7 @@ border: 1px solid #a6191f;
 }
 .LawyerInformation{
 text-align:center;
-border: 2px solid #a6191f;
+border: 1px solid #a6191f;
 height:400px;
 width:50%;
 display:flex;
@@ -171,4 +171,55 @@ height:300px;
 }
 .steps-photo{
 width:100%;
+}
+.form{
+border: 1px solid #a6191f;
+width:40%;
+margin:auto;
+height:600px;
+display:flex;
+flex-direction:row;
+}
+.form-desc{
+border: 1px solid #a6191f;
+flex:1;
+padding:30px;
+display:flex;
+flex-direction:column;
+gap:100px;
+background-color:#FFFFFF;
+}
+.desc-info{
+font-family: Courier;
+font-weight: 900;
+font-size: 18px;
+background-color:#FFFFFF;
+}
+.desc-contacts{
+color:#a6191f;
+font-family: Courier;
+font-weight: 550;
+font-size: 18px;
+background-color: transparent;
+}
+.form-input{
+padding:30px;
+flex:1;
+display:flex;
+flex-direction:column;
+gap:10px;
+border:1px solid #a6191f;
+}
+.label-input{
+height:6%;
+font-family: Courier;
+font-weight: 400;
+font-size: 18px;
+}
+.text-input{
+height:30%;
+resize:none;
+font-family: Courier;
+font-weight: 400;
+font-size: 18px;
 }
