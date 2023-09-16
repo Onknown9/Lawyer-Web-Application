@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1">
   <title>Main Page</title>
-  <link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
+  <link rel="stylesheet" type="text/css" th:href="@{/stylesheet.css}">
 </head>
 <body>
   <div class="MainContainer">
@@ -15,12 +15,12 @@
       <div class="HeaderInformation">
 
       <div class="Header-location">
-        <img src="/static/images/location.png" alt="location" class="header-location-photo">
+        <img th:src="@{/images/location.png}" alt="location" class="header-location-photo">
         <h5>city: Odessa, street: RandomStreet64, 3-A</h5>
       </div>
 
       <div class="Header-contacts">
-        <img src="/static/images/phone.png" alt="phone" class="header-contacts-photo">
+        <img th:src="@{/images/phone.png}" alt="phone" class="header-contacts-photo">
         <h5 class="header-phone">+380987654321</h5>
       </div>
 
@@ -36,10 +36,10 @@
         </div>
     </div>
   </div>
-    <img src="/static/images/court-redacted.png" alt="court" class="court-photo-1">
+    <img th:src="@{/images/court-redacted.png}" alt="court" class="court-photo-1">
 
     <div class="LawyerInformation">
-      <img src="/static/images/empty.png" alt="photo" class="lawyer-photo">
+      <img th:src="@{/images/empty.png}" alt="photo" class="lawyer-photo">
       <div class="Lawyer-Information">
         <h5 class="lawyer-label">Your security is our responsibility</h5>
         <p class="lawyer-desc">When you enter a lawyer in the search box, you will find many offers,
@@ -62,10 +62,10 @@
 
       <div class="steps-container">
         <h5 class="services-intro">Steps of Cooperation</h5>
-        <img src="/static/images/steps.png" alt="steps" class="steps-photo">
+        <img th:src="@{/images/steps.png}" alt="steps" class="steps-photo">
       </div>
 
-      <img src="/static/images/odessa.jpg" alt="odessa" class="court-photo-1">
+      <img th:src="@{/images/odessa.jpg}" alt="odessa" class="court-photo-1">
 
       <div class="form">
         <div class="form-desc">
@@ -74,18 +74,17 @@
           <div class="desc-contacts">RandomGmail@gmail.com</div>
           <div class="desc-contacts">+380987654321</div>
         </div>
-        <div class="form-input">
+        <form class="form-input" th:action="@{/send-message}" method="post">
           <div class="desc-contacts">Name:</div>
-          <input type="text" id="fname" for="fname" class="label-input"/>
+          <input type="text" name="name" class="label-input"/>
           <div class="desc-contacts">E-Mail:</div>
-          <input type="text" id="E-Mail" for="email" class="label-input"/>
+          <input type="text" name="email" class="label-input"/>
           <div class="desc-contacts">Topic:</div>
-          <input type="text" id="Topic" for="topic" class="label-input"/>
+          <input type="text" name="topic" class="label-input"/>
           <div class="desc-contacts">Message:</div>
-          <textarea id="message" name="message" class="text-input"></textarea>
-
+          <textarea name="message" class="text-input"></textarea>
           <button class="button" type="submit">Send Message</button>
-        </div>
+        </form>
       </div>
 
       <div class="Footer">
