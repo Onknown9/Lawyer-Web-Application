@@ -30,11 +30,13 @@ public class MainPageController {
         model.addAttribute("topic", topic);
         model.addAttribute("message", message);
 
-        sendMail();
+        String messageText = "From: "+name+", E-Mail: "+email+"\n Message: "+message;
+
+        sendMail(topic , messageText);
 
         return "Lawyer";
     }
-    public void sendMail(){
-        senderService.sendEmail("lawyera852@gmail.com","Subject","Body");
+    public void sendMail(String subject, String body){
+        senderService.sendEmail("lmaosaurus9897@gmail.com",subject,body);
     }
 }
