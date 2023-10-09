@@ -3,94 +3,96 @@
 <head>
   <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1">
   <title>Main Page</title>
-  <link rel="stylesheet" type="text/css" th:href="@{/stylesheet.css}">
+  <link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
 </head>
 <body>
   <div class="MainContainer">
 
     <div class="Starter">
-      <h5 class="intro">Lawyer Odessa</h5>
+      <h5 class="intro">Адвокати Одеса</h5>
     </div>
     <div class="HeaderContainer">
 
       <div class="HeaderInformation">
 
       <div class="Header-location">
-        <img th:src="@{/images/location.png}" alt="location" class="header-location-photo">
-        <h5>city: Odessa, street: RandomStreet64, 3-A</h5>
+        <img src="/static/images/location.png" alt="location" class="header-location-photo">
+        <h5>місто: Одеса, вулиця: RandomStreet64, 3-A</h5>
       </div>
 
       <div class="Header-contacts">
-        <img th:src="@{/images/phone.png}" alt="phone" class="header-contacts-photo">
-        <h5 class="header-phone">+380987654321</h5>
+        <img src="/static/images/phone.png" alt="phone" class="header-contacts-photo">
+        <h5 class="header-phone">+380671369404 +380931509679</h5>
       </div>
 
       </div>
   </div>
-    <img th:src="@{/images/court2.jpg}" alt="court" class="court-photo-1">
+    <img src="/static/images/court2.jpg" alt="court" class="court-photo-1">
 
+    <div class="gradient-section">
     <div class="LawyerInformation">
-      <img th:src="@{/images/empty.png}" alt="photo" class="lawyer-photo">
+      <img src="/static/images/empty.png" alt="photo" class="lawyer-photo">
       <div class="Lawyer-Information">
-        <h5 class="lawyer-label">Your security is our responsibility</h5>
-        <p class="lawyer-desc">When you enter a lawyer in the search box, you will find many offers,
-          on this page you will find the reasons why you should turn to me for help.
-          By applying for legal assistance, you can count on reimbursement of
-          material costs associated with paying for legal services in certain categories of cases.
-          Without your participation, I provide a range of services to protect your rights and interests,
-          at the stages of the proceedings, in the courts, in state bodies, organizations.</p>
+        <h5 class="lawyer-label">Ваша безпека - наша відповідальність</h5>
+        <p class="lawyer-desc">Коли ви введете адвоката у вікні пошуку, ви знайдете багато пропозицій,
+          на цій сторінці ви знайдете причини, чому вам варто звернутися до мене за допомогою.
+          Звертаючись за правовою допомогою, ви можете розраховувати на відшкодування
+          матеріальні витрати, пов'язані з оплатою юридичних послуг у окремих категоріях справ.
+          Без вашої участі надаю комплекс послуг по захисту ваших прав та інтересів,
+          на стадіях провадження, в судах, в державних органах, організаціях.</p>
       </div>
     </div>
 
     <div class="ServicesBox">
-      <h5 class="services-intro">Services</h5>
+      <h5 class="services-intro">Послуги</h5>
       <div class="boxes-container">
         <div class="box-item"><span>Documents</span></div>
         <div class="box-item"><span>Housing Disputes</span></div>
         <div class="box-item"><span>Divorce</span></div>
         <div class="box-item"><span>Seafarers Services</span></div>
       </div>
+    </div>
+    </div>
 
       <div class="steps-container">
-        <h5 class="services-intro">Steps of Cooperation</h5>
-        <img th:src="@{/images/steps.png}" alt="steps" class="steps-photo">
+        <h5 class="services-intro">Кроки співпраці</h5>
+        <img src="/static/images/steps-ukr.png" alt="steps" class="steps-photo">
       </div>
-
-      <img th:src="@{/images/odessa.jpg}" alt="odessa" class="court-photo-2">
+      <img src="/static/images/odessa.jpg" alt="odessa" class="court-photo-2">
 
       <div class="form">
         <div class="form-desc">
-          <div class="desc-info">Do you need legal assistance? Contact us today for a no-obligation chat!</div>
-          <div class="desc-contacts">city: Odessa, street: RandomStreet64, 3-A</div>
+          <div class="desc-info">Вам потрібна юридична допомога? Зв’яжіться з нами сьогодні, щоб поспілкуватися без жодних зобов’язань!</div>
+          <div class="desc-contacts">місто: Одеса, вулиця: RandomStreet64, 3-A</div>
           <div class="desc-contacts">RandomGmail@gmail.com</div>
-          <div class="desc-contacts">+380987654321</div>
+          <div class="form-desc-phones">
+            <div class="desc-contacts">Смокін Павло: +380987654321</div>
+            <div class="desc-contacts">Ушаков Олексій: +380931509679</div>
+          </div>
         </div>
         <form class="form-input" th:action="@{/}" method="post">
-          <div class="desc-contacts">Name:</div>
+          <div class="desc-contacts">Ім'я:</div>
           <input type="text" name="name" class="label-input"/>
           <div class="desc-contacts">E-Mail:</div>
           <input type="text" name="email" class="label-input"/>
-          <div class="desc-contacts">Topic:</div>
+          <div class="desc-contacts">Тема повідомлення:</div>
           <input type="text" name="topic" class="label-input"/>
-          <div class="desc-contacts">Message:</div>
+          <div class="desc-contacts">Текст повідомлення:</div>
           <textarea name="message" class="text-input"></textarea>
-          <button class="button" type="submit">Send Message</button>
+          <button class="button" type="submit">Відправити</button>
         </form>
       </div>
 
       <div class="Footer">
-        <div class="footer-label">
-          <p class="footer-text">Odessa lawyer service</p>
-          <p class="footer-text">Probably a link to google reviews?</p>
-        </div>
         <div class="footer-info">
-          <p class="footer-text">Any questions?</p>
-          <p class="footer-text">Need consultation?</p>
-          <p class="footer-text">Call here!</p>
-          <p class="footer-text">+380987654321</p>
+          <p class="footer-text">Які-небудь питання?</p>
+          <p class="footer-text">Потрібна консультація?</p>
+          <p class="footer-text">Телефонуйте до нас!</p>
+        </div>
+        <div class="footer-label">
+          <img src="/static/images/logo-2.png" alt="logo" class="logo">
         </div>
       </div>
-    </div>
 </div>
 </body>
 </html>

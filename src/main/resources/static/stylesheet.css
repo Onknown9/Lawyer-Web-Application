@@ -7,7 +7,6 @@
 display:flex;
 flex-direction:column;
 width:100%;
-gap: 60px;
 }
 .intro{
 background-color: transparent;
@@ -21,7 +20,7 @@ margin:auto;
 text-align:center;
 width:35%;
 margin:0 auto;
-padding:10px;
+padding:50px;
 position:relative;
 height:auto;
 margin-top: 30px;
@@ -41,22 +40,22 @@ flex:1;
 display: flex;
 flex-direction: row;
 justify-content:space-evenly;
-gap: 10px;
 }
 .Header-contacts{
 flex:1;
 display: flex;
 flex-direction: row;
 justify-content:space-evenly;
-gap: 10px;
 }
 .header-location-photo{
-width:30px;
-height:30px;
+margin:auto;
+width:35px;
+height:35px;
 }
 .header-contacts-photo{
-width:30px;
-height:30px;
+margin:auto;
+width:35px;
+height:35px;
 }
 .button2:hover{
 border-color: #2196F3;
@@ -78,15 +77,20 @@ opacity: 0.8;
 border: 1px solid black;
 border-style: solid none;
 }
+.gradient-section{
+width:100%;
+background: linear-gradient(#DCDCDC, white);
+}
 .LawyerInformation{
+background-color: transparent;
 text-align:center;
-
 height:400px;
 width:50%;
 display:flex;
 justify-content:space-evenly;
 flex-direction:row;
 margin:auto;
+padding:30px;
 }
 .lawyer-photo{
 border: 1px solid #282828;
@@ -95,6 +99,7 @@ height:300px;
 width:250px;
 }
 .Lawyer-Information{
+background-color: transparent;
 margin:auto;
 display:flex;
 justify-content:space-evenly;
@@ -102,12 +107,14 @@ flex-direction:column;
 gap:20px;
 }
 .lawyer-label{
+background-color: transparent;
 font-family: Georgia, serif;
 font-weight: 600;
 font-size: 25px;
 color:#202a44;
 }
 .lawyer-desc{
+background-color: transparent;
 color:#202a44;
 padding:20px;
 font-family: Georgia, serif;
@@ -115,18 +122,22 @@ font-weight: 500;
 font-size: 22px;
 }
 .ServicesBox{
+padding:70px;
+background-color: transparent;
 text-align:center;
 display:flex;
 flex-direction:column;
-gap:100px;
+gap:30px;
 }
 .services-intro{
+background-color: transparent;
 color: #202a44;
 font-family: Georgia, serif;
 font-weight: 600;
 font-size: 25px;
 }
 .boxes-container{
+background-color: transparent;
 margin:auto;
 width:50%;
 display:flex;
@@ -152,15 +163,22 @@ content: "Here is located all the information about this type of cases";
 border-color: #2196F3;
 }
 .steps-container{
-width:70%;
+padding-top:50px;
+padding-bottom:50px;
+background-color: white;
+text-align:center;
+width:100%;
 margin:auto;
 display:flex;
 flex-direction:column;
+gap:30px;
 }
 .steps-photo{
-width:100%;
+margin:auto;
+width:70%;
 }
 .form{
+padding:50px;
 width:40%;
 margin:auto;
 height:600px;
@@ -168,12 +186,13 @@ display:flex;
 flex-direction:row;
 }
 .form-desc{
+text-align:center;
 border: 1px solid #202a44;
 flex:1;
 padding:30px;
 display:flex;
 flex-direction:column;
-gap:100px;
+gap:90px;
 background-color:#FFFFFF;
 }
 .desc-info{
@@ -217,7 +236,7 @@ display:flex;
 flex-direction:row;
 width:100%;
 height:200px;
-background-color:#282828;
+background-color:#303030;
 }
 .Starter{
 text-align:center;
@@ -225,7 +244,7 @@ display:flex;
 flex-direction: row;
 width:100%;
 height:100px;
-background-color:#282828;
+background-color:#303030;
 }
 .footer-label{
 background-color: transparent;
@@ -255,4 +274,14 @@ border-radius: 10px;
 text-align: center;
 font-size: 16px;
 background-color: transparent;
+}
+.form-desc-phones{
+display:flex;
+flex-direction:column;
+background-color:transparent;
+gap:20px;
+}
+.logo{
+width:150px;
+height:150px;
 }
