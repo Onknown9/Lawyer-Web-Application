@@ -4,6 +4,7 @@
   <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1">
   <title>Main Page</title>
   <link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
+  <script type="text/javascript" src="/static/javascript.js"></script>
 </head>
 <body>
   <div class="MainContainer">
@@ -45,11 +46,23 @@
 
     <div class="ServicesBox">
       <h5 class="services-intro">Послуги</h5>
-      <div class="boxes-container">
-        <div class="box-item"><span>Documents</span></div>
-        <div class="box-item"><span>Housing Disputes</span></div>
-        <div class="box-item"><span>Divorce</span></div>
-        <div class="box-item"><span>Seafarers Services</span></div>
+      <div class="tab">
+        <button class="tablinks" onclick="openLink(event, 'Case1')">Case 1</button>
+        <button class="tablinks" onclick="openLink(event, 'Case2')">Case 2</button>
+        <button class="tablinks" onclick="openLink(event, 'Case3')">Case 3</button>
+      </div>
+
+      <div id="Case1" class="tabcontent">
+        <h3>Case 1 intro</h3>
+        <p>case 1 detailed description</p>
+      </div>
+      <div id="Case2" class="tabcontent">
+        <h3>Case 2 intro</h3>
+        <p>case 2 detailed description</p>
+      </div>
+      <div id="Case3" class="tabcontent">
+        <h3>Case 3 intro</h3>
+        <p>case 3 detailed description</p>
       </div>
     </div>
     </div>
